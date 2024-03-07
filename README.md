@@ -70,4 +70,14 @@ To use the jar file, put the following settings into your pom.xml.
         </dependency>
     ...
 
+## Use local
+
+lucene-analyzers-kuromoji-ipadic-neologd
+
+copy `lucene-analyzers-kuromoji-ipadic-neologd-[lucene-version]-[date].jar` jar file from `kuromoji-with-mecab-neologd-buildscript` and run below.
+
+```
+mvn install:install-file -Dfile=./lucene-analyzers-kuromoji-ipadic-neologd-[lucene-version]-[date].jar -DgroupId=org.codelibs -DartifactId=lucene-analyzers-kuromoji-ipadic-neologd -Dversion=[lucene-version]-[date] -Dpackaging=jar
+```
+
 See [CodeLibs Maven Repository](https://maven.codelibs.org/org/codelibs/lucene-analyzers-kuromoji-ipadic-neologd/).
